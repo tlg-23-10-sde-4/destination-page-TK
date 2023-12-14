@@ -13,6 +13,10 @@ user_input_form.addEventListener("submit", (e) => {
     const card = createCard({destinationName, locationName, photoUrl, descript});
 
     display_box.appendChild(card)
+
+    delete_button.addEventListener("click", function () {
+        card.remove()
+    })
 })
 
 function createCard({destinationName, locationName, photoUrl, descript}) {   
@@ -28,7 +32,7 @@ function createCard({destinationName, locationName, photoUrl, descript}) {
     <p class="card-text">${locationName}</p>
     ${descript && `<p class="card-text"}>${descript}</p>`}
     <button type="button" class="btn btn-info">Edit</button>
-    <button type="button" class="btn btn-danger">Delete</button>
+    <button type="button" class="btn btn-danger" id="delete_button" >Delete</button>
     </div>`
     return card
 }
