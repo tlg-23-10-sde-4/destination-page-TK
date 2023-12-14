@@ -32,6 +32,7 @@
           <form id="user_input_form">
             <label for="destination_name"></label>
             <input
+              required
               type="text"
               name=""
               id="destination_name"
@@ -53,14 +54,15 @@
               placeholder="Enter a photo URL"
             />
             <label for="description"></label>
-            <input
-              type="text"
+            <textarea
               name=""
               id="description"
+              cols="30"
+              rows="10"
               placeholder="Enter description here"
-            />
+            ></textarea>
             <label for="submit_button"></label>
-            <input type="submit" value="Add to list" id="submit_button" />
+            <input type="submit" value="Add to list" />
           </form>
         </article>
         <article id="display_box" class="col-12 col-sm-8">
