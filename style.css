@@ -1,0 +1,25 @@
+header.container, 
+#user_input_form {
+     display: flex;
+    flex-direction: column;
+    
+}
+header.container {
+    align-items: center;
+    padding: 20px;
+}
+
+#user_input_form input,
+#user_input_form textarea {
+    margin: 5px;
+}
+#cards_container_header  {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
